@@ -1,0 +1,30 @@
+.container {
+  border: 1px solid red;
+  padding: 1rem;
+}
+.container .title {
+  text-align: center;
+  color: green;
+  text-decoration: 2px underline blue;
+}
+.container .section-container {
+  display: flex;
+  border: 1px solid green;
+  flex-direction: row;
+  padding: 0.5rem;
+}
+.container article {
+  padding: 0.5rem;
+  text-align: center;
+}
+.container .border {
+  border-right: 1px solid green;
+}
+.container .red {
+  color: red;
+}
+.container .blue {
+  color: blue;
+}
+
+/*# sourceMappingURL=style.css.map */

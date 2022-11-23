@@ -1,0 +1,34 @@
+$color-primary: red;
+$color-secondary: blue;
+$color-tertiary:green;
+
+.container{
+    border: 1px solid $color-primary;
+    padding:1rem;
+    .title{
+        text-align: center;
+        color: $color-tertiary;
+        text-decoration: 2px underline $color-secondary;   
+    }
+    .section-container{
+        display: flex;
+        border:1px solid $color-tertiary;
+        flex-direction: row;
+        padding:0.5rem;  
+    }
+   article{
+    padding: 0.5rem;
+    text-align: center;
+   }
+   .border{
+   border-right: 1px solid $color-tertiary;
+   }
+   .red{
+    color:$color-primary;
+   }
+   .blue{
+    color:$color-secondary
+   }
+}
+
+
