@@ -8,6 +8,10 @@
     text-decoration: blue underline;
     color:green;
 }
+.articles{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
 
 @mixin articles-properties($color, $font-size:1rem, $border-color){
     color:$color;
@@ -17,18 +21,12 @@
     padding:0.5rem;
 }
 
-.articles{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-}
-
 .red{
     @include articles-properties(red, 1rem, green);
 }
 
 .blue{
     @include articles-properties(blue, 1rem, green);
-
 }
 
 .footer{
