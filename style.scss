@@ -1,0 +1,47 @@
+@use "functions.scss" as f;
+
+
+
+.container{
+    border: f.rem(2px) solid red;
+    padding:1rem;
+    & .title{
+        text-align: center;
+        text-decoration: blue underline;
+        color:green;
+    }
+
+    & .sub-title{
+        @extend .title;
+        padding:1rem;
+        border: f.rem(1px) solid red;
+        text-decoration: none;
+    }
+
+    @mixin articles-properties($color, $font-size:1rem, $border-color){
+        color:$color;
+        font-size: $font-size;
+        border:f.rem(1px) solid $border-color;
+        text-align: center;
+        padding:0.5rem;
+    }
+    
+    .articles{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        & .red{
+            @include articles-properties(red, 1rem, green);
+        }
+        
+        & .blue{
+            @include articles-properties(blue, 1rem, green);
+        }
+    }
+    
+    .footer{
+        @include articles-properties(green, 24px, blue);
+        margin-top: f.rem(16px);
+    }
+}
+
+
