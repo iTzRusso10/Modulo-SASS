@@ -1,0 +1,42 @@
+.container {
+  border: 0.125rem solid red;
+  padding: 1rem;
+}
+
+.title {
+  text-align: center;
+  text-decoration: blue underline;
+  color: green;
+}
+
+.articles {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.red {
+  color: red;
+  font-size: 1rem;
+  border: 0.0625rem solid green;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.blue {
+  color: blue;
+  font-size: 1rem;
+  border: 0.0625rem solid green;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.footer {
+  color: green;
+  font-size: 24px;
+  border: 0.0625rem solid blue;
+  text-align: center;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */
